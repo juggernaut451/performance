@@ -57,7 +57,7 @@
 						<h3>0.1 sec is flawless</h3>
 					</section>
 					<section>
-						<h3>If it takes 1 sec to load then user flow is interupted</h3>
+						<h3>If it takes 1 sec to load, then user flow is interupted</h3>
 					</section>
 					<section>
 						<h3>1 sec slow down can lead to fewer page views & less conversion</h3>
@@ -146,7 +146,103 @@
 								</blockquote>
 					</section>
 				</section>
-                
+
+                <!-- Example of nested vertical slides -->
+				<section>
+						<section>
+							<h2>Compilation Performance</h2>
+						</section>
+						<section>
+							<h3>Parsing</h3>
+							<ul>
+									<li class="fragment">Eager (Full parsing)</li>
+									<li class="fragment">Lazy (Pre parsing)</li>
+							</ul>
+							
+						</section>
+						<section>
+							<h3>Links To check</h3>
+							<ul>
+								<li class="fragment">Optimize-Js (Webpack pluggin available)<p>Optimize a JavaScript file for faster initial execution and parsing, by wrapping all immediately-invoked functions or likely-to-be-invoked functions in parentheses</p></li>
+								<li class="fragment">Test Optimize-Js in <a href="https://nolanlawson.github.io/test-optimize-js/">browser</a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>Node.js</h3>
+							<p>Turbo fan (super speed like Z900)</p>
+							<ul>
+								<li class="fragment">--trace-opt (for optimizing function for turbofan)</li>
+								<li class="fragment">--trace-deopt (for deoptimizing function for turbofan)</li>
+								<li class="fragment"><a href="https://ponyfoo.com/articles/an-introduction-to-speculative-optimization-in-v8">Speculative optimization</a>
+								<p>The optimization compiler optimizes for waht it's sees. if it sees something new, that's problematic</p>
+								</li>
+							</ul>
+						</section>
+		
+						<section>
+								<h2>Awesome Gyan</h2>
+								<blockquote class="fragment" >
+									&ldquo;DOING STUFF TWICE IS SLOWER THAN DOING IT ONCE&rdquo;
+								</blockquote>
+						</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+						<section>
+							<h2>Rendering Performance</h2>
+						</section>
+						<section>
+							<h3>CSS</h3>
+							<ul>
+									<li class="fragment">Stick to BEM</li>
+									<li class="fragment">Reflow of an element cause reflow of its parents & children</li>
+									<li class="fragment">Avoid table layout</li>
+									<li class="fragment">Avoid batch DOM manipulation</li>
+							</ul>
+							
+						</section>
+						<section>
+							<h3>Links To check</h3>
+							<ul>
+								<li class="fragment"><a href="https://github.com/wilsonpage/fastdom">FastDom</a> - eliminates layout thrashing by batching DOM measurement and mutation tasks</li>
+								<li class="fragment"><a href="https://www.cloudping.info/">Cloudping</a> -  estimate the latency from your browser to each AWS™ region</li>
+							</ul>
+						</section>
+						<section>
+							<h3>Caching</h3>
+						</section>
+						<section>
+								<h3>Cache HTTP Method</h3>
+								<ul>
+									<li class="fragment">GET</li>
+									<li class="fragment">HEAD</li>
+									<li class="fragment">OPTION</li>
+								</ul>
+						</section>
+						<section>
+								<h3>Cache Control Header</h3>
+								<ul>
+									<li class="fragment">no-store : Browser get new version every time</li>
+									<li class="fragment">no-cache : Browser can store copy, but cant't use it without checking server</li>
+									<li class="fragment">max-age  : Tell browser not to bother if whatever assets it has it less than a certain number</li>
+									<li class="fragment">s-maxage : For CDN only</li>
+								</ul>
+						</section>
+						<section>
+								<h2>Awesome Gyan</h2>
+								<blockquote class="fragment" >
+									&ldquo;TCP intial window is 14KB. If you can get your site under 14KB, Then you can serve it in one GO&rdquo;
+								</blockquote>
+								<blockquote class="fragment" >
+										&ldquo;Caching is GREAT UNLESS you mess it up&rdquo;
+								</blockquote>
+								<blockquote class="fragment" >
+										&ldquo;WEBPACK bundle should be less than 300KB&rdquo;
+								</blockquote>
+						</section>
+					</section>
+                <section>
                 <section>
                     <h2>Thank You</h2>
                 </section>
